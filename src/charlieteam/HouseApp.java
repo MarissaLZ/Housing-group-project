@@ -7,7 +7,7 @@ package charlieteam;
  * @author Joe, Marissa, Kathleen, & Peter
  *
  */
-public class HouseApp
+public class HouseApp // Described in Lesson 10
 {
 
 	/**
