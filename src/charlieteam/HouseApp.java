@@ -4,7 +4,7 @@
 package charlieteam;
 
 /**
- * @author Joe, Marissa, Kathleen, & Peter
+ * @author Charlie Team
  *
  */
 public class HouseApp // Described in Lesson 10
