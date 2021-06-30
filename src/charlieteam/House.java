@@ -106,6 +106,7 @@ public class House
 		return result;
 	}
 	
+	
 	//Returns a message containing all the information on a house object
 	public String toString()
 	{
