@@ -16,6 +16,9 @@ public class House
 	private String style = "";
 	private double plotSize = 0;
 	
+	//constant for bedroom area
+	private final int BEDROOM_AREA = 300;
+	
 	//Default constructor
 	House()
 	{
@@ -88,7 +91,7 @@ public class House
 	//Method that returns total area of house object
 	public double getTotalArea()
 	{
-		double area = livingRoomSize + familyRoomSize + (300 * (double)numBedrooms);
+		double area = livingRoomSize + familyRoomSize + (BEDROOM_AREA * (double)numBedrooms);
 		
 		return area;
 	}
