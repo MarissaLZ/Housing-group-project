@@ -7,24 +7,22 @@ package charlieteam;
  * @author Joe
  *
  */
-public class SubDivision {
+public class Subdivision
+{
 	/**
 	 * @param args
 	 */
-	 
-	 //instance variable
-	 //House specifies the type therefore input must be of the class House type
-	 private ArrayList<House> houses = new ArrayList<>();
+	// instance variable
+	// House specifies the type therefore input must be of the class House type
+	private ArrayList<House> houses = new ArrayList<>();
 
-	 
-	 //default constructor and we know object is created
-	 //should I declare as public?
-	 public subDivision () {
+	// default constructor and we know object is created
+	// should I declare as public?
+	public subDivision () {
 	 }
-	 
-	 
-	 //methods
-	 //adds a house
+
+	// methods
+	// adds a house
 	public boolean add(House h) {
 	    houses.add(h);
 	    
@@ -46,5 +44,5 @@ public class SubDivision {
 	    
 	     
 	 }
-	 
+
 }
