@@ -41,7 +41,7 @@ public class House
 		numBedrooms = newBedroom;
 	}
 	
-	public void setFamilRoomArea(double newFamilySize)
+	public void setFamilyRoomArea(double newFamilySize)
 	{
 		familyRoomSize = newFamilySize;
 	}

@@ -19,7 +19,7 @@ public class HouseTester
 			// sets data for house based on user input
 			test1.setStyle(userIn.next());
 			test1.setBedrooms(userIn.nextInt());
-			test1.setFamilRoomArea(userIn.nextDouble());
+			test1.setFamilyRoomArea(userIn.nextDouble());
 			test1.setLivingRoomArea(userIn.nextDouble());
 			test1.setPlot(userIn.nextDouble());
 
@@ -32,7 +32,7 @@ public class HouseTester
 			// sets data for house based on user input
 			test2.setStyle(userIn.next());
 			test2.setBedrooms(userIn.nextInt());
-			test2.setFamilRoomArea(userIn.nextDouble());
+			test2.setFamilyRoomArea(userIn.nextDouble());
 			test2.setLivingRoomArea(userIn.nextDouble());
 			test2.setPlot(userIn.nextDouble());
 
