@@ -2,58 +2,47 @@
  * 
  */
 package charlieteam;
-import java.util.*;
+
 /**
  * @author Joe
  *
  */
-public class Subdivision {
+public class Subdivision
+{
 	/**
 	 * @param args
 	 */
-	
 	// instance variable
+	// House specifies the type therefore input must be of the class House type
 	private ArrayList<House> houses = new ArrayList<>();
 
-	// default constructor
-	public Subdivision () {
-	}
+	// default constructor and we know object is created
+	// should I declare as public?
+	public subDivision () {
+	 }
 
-	//Adds a house to the subdivision
+	// methods
+	// adds a house
 	public boolean add(House h) {
-		houses.add(h);
+	    houses.add(h);
+	    
 	    if (houses.contains(h)) {
 	        return true;
 	    } 
 	    else {
 	        return false;
 	    }
-	}  
-	
-	//Accessor method to get a house object
-	public House get(int i) {
-		return houses.get(i);
-	}
-	
-	public int size() {
-		return houses.size();	
-	}
-	
-	//Returns list of houses
-	public ArrayList<House> list() {
-		return houses;
-	}
-    
-	//overrides toString() and returns a string of house objects in the subdivision
-	public String toString() {
-		String str = "";
-		for (House element: houses) {
-			 str+= element+"\n\n";
-		}
-		return str;	 
-	}
-	// returns true or false if a given String characteristic is found
-	public boolean find(String characteristic) {
-		return this.toString().contains(characteristic);
-	}	      
+	    
+        //accessor method to get house object
+        public House get(int i) {
+            return houses.get(i);
+            
+        }
+        
+	    
+	    
+	    
+	     
+	 }
+
 }
