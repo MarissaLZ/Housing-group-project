@@ -12,6 +12,8 @@ public class SanityCheckerVersion2 {
 	 * are correct, and that the constructor and method signatures are correct.
 	 * 
 	 */
+	
+
 	public static void main(String[] args) {
 		House other = new House();
 		House small = new House("small", 3.1, 0.2, 0, .3);
@@ -28,11 +30,17 @@ public class SanityCheckerVersion2 {
 		small.setPlot(2.3);
 		small.setStyle("s");
 
-//		Subdivision sd = new Subdivision();
-//		boolean b2 = sd.add(small);
-//		other = sd.get(0);
-//		ArrayList<House> al = sd.list();
-//		a = sd.size();
+		Subdivision sd = new Subdivision();
+		boolean b2 = sd.add(small);
+		other = sd.get(0);
+		ArrayList<House> al = sd.list();
+		a = sd.size();
 	}
 
-}
+} 
+
+
+
+
+
+
