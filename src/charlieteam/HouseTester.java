@@ -47,6 +47,7 @@ public class HouseTester
 					"House 1 compared to House 2: " + test1.compareArea(test2));
 
 		}
+		
 	}
 
 }
