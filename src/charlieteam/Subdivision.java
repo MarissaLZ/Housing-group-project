@@ -68,4 +68,8 @@ public class Subdivision
 	{
 		return this.toString().contains(characteristic);
 	}
+
+	// Step 3.
+
+	// Step 4.
 }
