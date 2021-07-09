@@ -127,6 +127,22 @@ public class Subdivision
 
 	}
 
+	// returns an array of all the houses that the bedrooms are equal to or
+	// between the given floor and ceiling
+	public ArrayList<House> listByBedrooms(int floor, int ceiling)
+	{
+		ArrayList<House> plotList = new ArrayList<>();
+		for (int i = 0; i < houses.size(); i++)
+		{
+			if (houses.get(i).getBedrooms() >= floor
+					&& houses.get(i).getBedrooms() <= ceiling)
+			{
+				plotList.add(houses.get(i));
+			}
+		}
+		return plotList;
+	}
+
 	// returns an array of all the houses that the plot size are equal to or
 	// between the given floor and ceiling
 	/**
@@ -301,4 +317,5 @@ public class Subdivision
 		this.remove(position);
 		houses.add(position, houseToUpdate);
 	}
+
 }
