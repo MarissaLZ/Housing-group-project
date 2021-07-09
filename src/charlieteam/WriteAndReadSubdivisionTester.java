@@ -1,9 +1,9 @@
 package charlieteam;
 
-public class WriteAndReadSubdivisionTester 
+public class WriteAndReadSubdivisionTester
 {
 
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
 		Subdivision subDivision = new Subdivision();
 		House house1 = new House(new String("ranch"), 200, 200, 3, 5000);
@@ -19,22 +19,29 @@ public class WriteAndReadSubdivisionTester
 		subDivision.add(house5);
 		subDivision.add(house6);
 
-//		boolean success = subDivision.toDisk();
-//
-//		if (success == true) {
-//			System.out.println("You have written 6 houses to a text file ");
-//		} else {
-//			System.out.println("File creation failed");
-//		}
-//
-//		Subdivision subDivision2 = new Subdivision();
-//
-//		boolean successFromDisk = subDivision2.fromDisk();
-//		if (successFromDisk == true) {
-//			System.out.println("You have read " + subDivision2.size() + " houses from a text file ");
-//			System.out.println(subDivision2.toString());
-//		} else {
-//			System.out.println("File creation failed");
-//		}
+		boolean success = subDivision.toDisk();
+
+		if (success == true)
+		{
+			System.out.println("You have written 6 houses to a text file ");
+		}
+		else
+		{
+			System.out.println("File creation failed");
+		}
+
+		Subdivision subDivision2 = new Subdivision();
+
+		boolean successFromDisk = subDivision2.fromDisk();
+		if (successFromDisk == true)
+		{
+			System.out.println("You have read " + subDivision2.size()
+					+ " houses from a text file ");
+			System.out.println(subDivision2.toString());
+		}
+		else
+		{
+			System.out.println("File creation failed");
+		}
 	}
 }
