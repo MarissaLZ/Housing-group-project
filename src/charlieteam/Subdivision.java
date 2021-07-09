@@ -129,6 +129,12 @@ public class Subdivision
 
 	// returns an array of all the houses that the bedrooms are equal to or
 	// between the given floor and ceiling
+	/**
+	 * 
+	 * @param floor
+	 * @param ceiling
+	 * @return
+	 */
 	public ArrayList<House> listByBedrooms(int floor, int ceiling)
 	{
 		ArrayList<House> plotList = new ArrayList<>();
