@@ -2,18 +2,21 @@ package charlieteam;
 
 import java.util.ArrayList;
 
-public class Step3_SanityChecker {
+public class Step3_SanityChecker
+{
 
 	/*
-	 * Put this class in your Project's src folder. It must compile to score better
-	 * than a D on the project.
+	 * Put this class in your Project's src folder. It must compile to score
+	 * better than a D on the project.
 	 * 
 	 * Don't worry about trying to execute this code. It does nothing. But if it
-	 * compiles, you'll know that your House and Subdivision class and method names
-	 * are correct, and that the constructor and method signatures are correct.
+	 * compiles, you'll know that your House and Subdivision class and method
+	 * names are correct, and that the constructor and method signatures are
+	 * correct.
 	 * 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		House other = new House();
 		House small = new House("small", 3.1, 0.2, 0, .3);
 		int g = small.compareArea(other);
@@ -33,12 +36,12 @@ public class Step3_SanityChecker {
 		boolean b2 = sd.add(small);
 		other = sd.get(0);
 		ArrayList<House> al = sd.list();
-//		al = sd.listByArea(1555.5, 2500.2);
-//		al = sd.listByBedrooms(3, 6);
-//		al = sd.listByPlot(.2, .6);
-//		a = sd.size();
-//		al = sd.sortByArea();
-//		al = sd.sortByPlot();
+		al = sd.listByArea(1555.5, 2500.2);
+		al = sd.listByBedrooms(3, 6);
+		al = sd.listByPlot(.2, .6);
+		a = sd.size();
+		al = sd.sortByArea();
+		al = sd.sortByPlot();
 
 	}
 
