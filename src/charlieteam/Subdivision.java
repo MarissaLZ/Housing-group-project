@@ -124,7 +124,6 @@ public class Subdivision
 			}
 		}
 		return areaList;
-
 	}
 
 	// returns an array of all the houses that the bedrooms are equal to or
@@ -137,16 +136,16 @@ public class Subdivision
 	 */
 	public ArrayList<House> listByBedrooms(int floor, int ceiling)
 	{
-		ArrayList<House> plotList = new ArrayList<>();
+		ArrayList<House> bedroomList = new ArrayList<>();
 		for (int i = 0; i < houses.size(); i++)
 		{
 			if (houses.get(i).getBedrooms() >= floor
 					&& houses.get(i).getBedrooms() <= ceiling)
 			{
-				plotList.add(houses.get(i));
+				bedroomList.add(houses.get(i));
 			}
 		}
-		return plotList;
+		return bedroomList;
 	}
 
 	// returns an array of all the houses that the plot size are equal to or
