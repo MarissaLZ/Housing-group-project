@@ -249,8 +249,7 @@ public class Subdivision
 	 */
 	public boolean toDisk()
 	{
-		File txt = new File("subdivision.txt"); // Ask if this should be an
-												// static private variable?
+		File txt = new File("subdivision.txt");
 		try
 		{
 			try (PrintWriter out = new PrintWriter(txt);)
@@ -279,7 +278,7 @@ public class Subdivision
 	 */
 	public boolean fromDisk()
 	{
-		File txt = new File("subdivision.txt"); // Same variable
+		File txt = new File("subdivision.txt");
 		try
 		{
 			try (Scanner readin = new Scanner(txt);)
