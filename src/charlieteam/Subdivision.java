@@ -185,13 +185,7 @@ public class Subdivision
 			int minIndex = i;
 			for (int j = i + 1; j < areaSort.size(); j++)
 			{
-				if (hMinArea.getTotalArea() > areaSort.get(j).getTotalArea()) // TODO:
-																			  // Fix
-																			  // to
-																			  // use
-																			  // House.compareArea()
-																			  // for
-																			  // the
+				if (hMinArea.getTotalArea() > areaSort.get(j).getTotalArea()) // TODO:// the
 																			  // sorting
 				{
 					hMinArea = areaSort.get(j);
