@@ -80,7 +80,7 @@ public class Menu
 					System.out.print("Enter floor and ceiling: ");
 					for (House element : subdivision.listByArea(userIn.nextInt(), userIn.nextInt()))
 					{
-						System.out.println(element);
+						System.out.println(element + "\n");
 					}
 				}
 				
@@ -89,7 +89,7 @@ public class Menu
 					System.out.print("Enter floor and ceiling: ");
 					for (House element : subdivision.listByPlot(userIn.nextInt(), userIn.nextInt()))
 					{
-						System.out.println(element);
+						System.out.println(element + "\n");
 					}
 				}
 				
@@ -97,7 +97,7 @@ public class Menu
 				{
 					for (House element : subdivision.sortByArea())
 					{
-						System.out.println(element);
+						System.out.println(element + "\n");
 					}
 				}
 				
@@ -105,7 +105,7 @@ public class Menu
 				{
 					for (House element : subdivision.sortByPlot())
 					{
-						System.out.println(element);
+						System.out.println(element + "\n");
 					}
 				}
 				
@@ -125,6 +125,11 @@ public class Menu
 			
 		
 			}while(user >= 1 && user <=9);
+			
+			if(user == 0)
+			{
+				System.out.print("\nExiting program");
+			}
 		}
 
 	}
