@@ -179,13 +179,14 @@ public class Subdivision
 	public ArrayList<House> sortByArea()
 	{
 		ArrayList<House> areaSort = new ArrayList<>(houses);
+
 		for (int i = 0; i < areaSort.size(); i++)
 		{
 			House hMinArea = areaSort.get(i);
 			int minIndex = i;
 			for (int j = i + 1; j < areaSort.size(); j++)
 			{
-				if (hMinArea.getTotalArea() > areaSort.get(j).getTotalArea()) 
+				if (hMinArea.compareArea(areaSort.get(j)) > 0) 
 				{
 					hMinArea = areaSort.get(j);
 					minIndex = j;
