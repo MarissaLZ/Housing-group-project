@@ -34,12 +34,14 @@ public class Menu
     			do
     			{
     				System.out.print(message);
+    			
     				
     				user = userIn.nextInt();
     				
     				if(user == 1) 
     				{
     					System.out.print(subdivision.toString());
+    					System.out.println("\n");
     
     				}
     				
@@ -51,12 +53,15 @@ public class Menu
     					House newHouse = new House(userIn.next(), userIn.nextInt(), userIn.nextInt(), userIn.nextInt(), userIn.nextInt());
     							
     					subdivision.add(newHouse);
+    					System.out.println("\n");
     				}
     				
     				else if(user == 3) 
     				{
     					System.out.print("Enter position of house to remove: ");
     					subdivision.remove(userIn.nextInt());
+    					System.out.println("\n");
+    					
     				}
     				
     				else if(user == 4) 
@@ -73,6 +78,8 @@ public class Menu
     					updateHouse.setStyle(style);
     					
     					subdivision.update(position, updateHouse);
+    					
+    					System.out.println("\n");
     				}
     				
     				else if(user == 5) 
@@ -82,6 +89,7 @@ public class Menu
     					{
     						System.out.println(element + "\n");
     					}
+    					System.out.println("\n");
     				}
     				
     				else if(user == 6) 
@@ -91,6 +99,7 @@ public class Menu
     					{
     						System.out.println(element + "\n");
     					}
+    					System.out.println("\n");
     				}
     				
     				else if(user == 7) 
@@ -99,6 +108,7 @@ public class Menu
     					{
     						System.out.println(element + "\n");
     					}
+    					System.out.println("\n");
     				}
     				
     				else if(user == 8) 
@@ -107,6 +117,7 @@ public class Menu
     					{
     						System.out.println(element + "\n");
     					}
+    					System.out.println("\n");
     				}
     				
     				else if(user == 9) 
@@ -121,6 +132,7 @@ public class Menu
             			{
             				System.out.println("File creation failed");
             			}
+            			System.out.println("\n");
     				}	
             		else if(user > 9 || user < 0)
         			{
@@ -130,6 +142,7 @@ public class Menu
         				
         				user = userIn.nextInt(); 
         				
+        				System.out.println("\n");
     				}
     			
     		
